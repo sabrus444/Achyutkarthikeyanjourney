@@ -264,7 +264,7 @@ function startSite(){
   const design=d=>{
     if(!d) return '';
     const has=(d.images||[]).some(x=>x&&x.src);
-    const g=has||d.cad!==false?`<div class="gallery">${gallery(d.images,[{t:'CAD screenshot',cad:1},{t:'Sketch or render',cad:1}])}</div>`:'';
+    const g=has||(d.cad!==false&&d.placeholders!==false)?`<div class="gallery">${gallery(d.images,[{t:'CAD screenshot',cad:1},{t:'Sketch or render',cad:1}])}</div>`:'';
     return `<div class="design${g?'':' solo'}"><div><h5>How I designed it</h5>${d.tool?`<span class="tool">${esc(d.tool)}</span>`:''}<p>${esc(d.how)}</p></div>${g}</div>`;
   };
   const pics=it=>(it.photos||[]).some(x=>x&&x.src)?`<div class="gallery">${gallery(it.photos,[])}</div>`:'';
