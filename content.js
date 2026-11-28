@@ -18,7 +18,8 @@
    • New step: copy one whole item { ... }, paste it into the right phase,
      and give it a new id (letters, numbers and dashes only).
    • "How I designed it": fill in design: { ... }. Delete that line for a
-     year with no design story.
+     year with no design story. For a year designed with sketches instead of
+     CAD, add  cad: false  inside design: { } (see Season 1).
    • Keep the commas between items. Save, then re-upload the site.
    ===================================================================== */
 
@@ -83,7 +84,7 @@ window.SITE = {
               built: "In my first VEX season I learned all the basic mechanisms and focused on the drivetrain, building several iterations in different configurations. The game was Tipping Point, where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Our team qualified for the National Championship and the VEX Worlds Championship. It was my first time at a VEX championship venue, and I was amazed by the designs other students had built. Seeing them showed me how far I could take my own robots.",
               learned: ["How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
-              design: { tool: "CAD tool used (e.g. Onshape, Fusion 360)", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
+              design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot.", images: [] },
               photos: [],
               awards: [
                 { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021–22" },
