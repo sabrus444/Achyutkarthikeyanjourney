@@ -262,13 +262,13 @@ function startSite(){
       return `${ballArt}${it.tagline?`<p class="tagline">${esc(it.tagline)}</p>`:''}
         <div class="pdr"><div><h4>The problem</h4><p>${esc(it.problem)}</p></div><div><h4>The design</h4><p>${esc(it.built)}</p></div><div><h4>The result</h4><p>${esc(it.result)}</p></div></div>
         <div class="cols" style="margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))"><div><h4>What I enjoyed</h4><p>${esc(it.enjoyed)}</p></div><div><h4>What I learned</h4>${learnedList(it)}</div></div>
-        ${design(it.design)}${pics(it)}<div class="awards">${awards(it.awards)}</div>
+        ${design(it.design)}${pics(it)}${it.awards===false?'':`<div class="awards">${awards(it.awards)}</div>`}
         ${(it.lineage||[]).length?`<div class="subh">Built on everything before it</div><table class="lin"><tbody>${it.lineage.map(l=>`<tr><td><a href="#${esc(l.link||'journey')}" data-open="${esc(l.link||'')}">From ${esc(l.from)}</a></td><td>${esc(l.what)}</td></tr>`).join('')}</tbody></table>`:''}
         ${pr?`<div class="subh">From project to product</div><div class="prod"><div><p class="vision">${esc(pr.vision)}</p><ul class="who">${(pr.who||[]).map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div><ol class="road">${(pr.roadmap||[]).map((r,i)=>`<li class="s-${esc(r.status)}"><i>${r.status==='done'?'✓':i+1}</i><span>${esc(r.step)}</span><small>${st[r.status]||''}</small></li>`).join('')}</ol></div>`:''}`;
     }
     return `${it.game?`<p class="game">Season game: <b>${esc(it.game)}</b></p>`:''}
       <div class="cols"><div><h4>What I built</h4><p>${esc(it.built)}</p></div><div><h4>What I enjoyed</h4><p>${esc(it.enjoyed)}</p></div><div><h4>What I learned</h4>${learnedList(it)}</div></div>
-      ${design(it.design)}${pics(it)}<div class="awards">${awards(it.awards)}</div>`;
+      ${design(it.design)}${pics(it)}${it.awards===false?'':`<div class="awards">${awards(it.awards)}</div>`}`;
   };
   const card=(it,band)=>`<details class="card${it.type==='capstone'?' capcard':''}" id="${esc(it.id)}" style="--band:${band}">
     <summary><span class="bar"></span><div><div class="kick"><b>${esc(it.stage)}</b> · ${esc(it.era)}</div><h3>${esc(it.title)}</h3><p class="sum">${esc(it.type==='capstone'?(it.tagline||it.problem):it.built)}</p><div class="chips">${(it.roles||[]).map(r=>`<span>${esc(r)}</span>`).join('')}${it.design?'<span>CAD</span>':''}</div></div><span class="more"><span class="o">Read more</span><span class="c">Close</span>${chev}</span></summary>

@@ -14,6 +14,7 @@
        { src: "photos/my-robot.jpg", caption: "What this shows" },
    • Award: inside awards: [ ] add
        { name: "Award name", event: "Event name", year: "2026" },
+     No awards for a step? Write  awards: false  to hide the awards line.
    • New step: copy one whole item { ... }, paste it into the right phase,
      and give it a new id (letters, numbers and dashes only).
    • "How I designed it": fill in design: { ... }. Delete that line for a
@@ -47,7 +48,7 @@ window.SITE = {
               built: "Towers, houses, trains and anything else I could imagine, usually taller than I was.",
               enjoyed: "Making something new out of the same pile of blocks every single day.",
               learned: ["A wide base keeps a tower standing", "When something falls, rebuild it better"],
-              photos: [], awards: []
+              photos: [], awards: false
             },
             {
               id: "lego", type: "lego", stage: "LEGO", era: "Add grades",
@@ -56,7 +57,7 @@ window.SITE = {
               built: "Sets at first, then my own creations: vehicles, machines and builds with gears and moving parts.",
               enjoyed: "Putting the instructions away and inventing my own designs.",
               learned: ["How gears change speed and strength", "Planning a build before starting", "Patience with big projects"],
-              photos: [], awards: []
+              photos: [], awards: false
             },
             {
               id: "fll", type: "fll", stage: "FLL", era: "Add grade",
@@ -65,7 +66,7 @@ window.SITE = {
               built: "My first competition robot, built from LEGO with a team, to complete missions on the challenge table.",
               enjoyed: "The moment something I helped build ran its missions on the table at competition.",
               learned: ["Motors, sensors and how robots are programmed", "My first lines of robot code", "Working as part of a team"],
-              photos: [], awards: []
+              photos: [], awards: false
             }
           ]
         },
