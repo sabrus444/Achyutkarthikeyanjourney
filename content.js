@@ -102,7 +102,7 @@ window.SITE = {
               ]
             },
             {
-              id: "vex-ms-2", type: "vex", stage: "VEX", era: "Season 2 · Add year",
+              id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "Season 2 · Add year",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Add this season's VEX game",
               built: "Wrote the driver controls and the autonomous routines for our robot.",
@@ -112,7 +112,7 @@ window.SITE = {
               photos: [], awards: []
             },
             {
-              id: "vex-ms-3", type: "vex", stage: "VEX", era: "Season 3 · Add year",
+              id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "Season 3 · Add year",
               title: "Leading the team",
               roles: ["Team captain", "Lead programmer"], game: "Add this season's VEX game",
               built: "Led the team through the season while still writing the robot's code.",
@@ -140,7 +140,7 @@ window.SITE = {
               photos: [], awards: []
             },
             {
-              id: "vex-hs", type: "vex", stage: "VEX", era: "Sophomore year",
+              id: "vex-hs", type: "vex", stage: "VEX V5", era: "Sophomore year",
               title: "Back to VEX, with everything I'd learned",
               roles: ["Add role"], game: "Add this season's VEX game",
               built: "Rejoined VEX through my high school program, bringing ideas from FRC and middle school.",
