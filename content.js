@@ -88,8 +88,8 @@ window.SITE = {
               built: "The drivetrain for our Tipping Point robot, rebuilt through several iterations as I learned the basic VEX mechanisms. Tipping Point was a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Rebuilding and learning how to build a drivetrain. I took the drivetrain apart and rebuilt it more than 10 times before it became a decent version.",
               result: "Our team qualified for the National Championship and the VEX Worlds Championship. It was my first time at a VEX championship venue, and I was amazed by the designs other students had built. Seeing them showed me how far I could take my own robots.",
-              learned: ["How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
-              design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot.", images: [] },
+              learned: ["Through the painful process of rebuilding, I learned that I could save a lot of time by learning CAD and building exactly from the CAD model", "How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
+              design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot. Rebuilding the drivetrain more than 10 times is what convinced me to learn CAD.", images: [] },
               photos: [],
               awards: [
                 { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021 - 2022" },
