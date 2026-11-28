@@ -130,10 +130,11 @@ window.SITE = {
               ]
             },
             {
-              id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "Season 3 · Add year",
+              id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "2023 - 2024", team: "95070C", club: "Redwood Robotics",
               title: "Leading the team",
-              roles: ["Team captain", "Lead programmer"], game: "Add this season's VEX game",
-              built: "Led the team through the season while still writing the robot's code.",
+              roles: ["Team captain", "Coach", "Lead programmer"], game: "Over Under",
+              responsibility: "As team captain and coach, I led the team and coached our drive team in matches, while still leading the programming.",
+              built: "Our robot for Over Under, a game where robots score triballs into goals and elevate on a bar at the end of the match. I led the team through the season while still writing the robot's code.",
               enjoyed: "Helping teammates find their strengths and seeing the whole team improve.",
               learned: ["Leading and planning a season", "Communicating clearly with teammates", "Making decisions when the clock is ticking"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
