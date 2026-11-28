@@ -10,6 +10,8 @@
 
    EVERYDAY UPDATES
    • Change any text between the quotes "like this".
+   • responsibility: one or two sentences on what you were responsible for
+     that season. It shows under your role and on the closed card.
    • Photo: put the image in the "photos" folder, then add inside photos: [ ]
        { src: "photos/my-robot.jpg", caption: "What this shows" },
    • Award: inside awards: [ ] add
@@ -80,8 +82,9 @@ window.SITE = {
             {
               id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "Season 1 · 2021–22",
               title: "First year in VEX: learning the basics",
-              roles: ["Hardware", "Drivetrain"], game: "Tipping Point (VEX V5 Robotics Competition)",
-              built: "In my first VEX season I learned all the basic mechanisms and focused on the drivetrain, building several iterations in different configurations. The game was Tipping Point, where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
+              roles: ["Builder"], game: "Tipping Point (VEX V5 Robotics Competition)",
+              responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
+              built: "The drivetrain for our Tipping Point robot, rebuilt through several iterations as I learned the basic VEX mechanisms. Tipping Point was a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Our team qualified for the National Championship and the VEX Worlds Championship. It was my first time at a VEX championship venue, and I was amazed by the designs other students had built. Seeing them showed me how far I could take my own robots.",
               learned: ["How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
               design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot.", images: [] },

@@ -98,6 +98,8 @@ details[open] .more svg{transform:rotate(180deg)}
 details[open] .more .o{display:none}details:not([open]) .more .c{display:none}
 .inner{padding:0 22px 24px 46px}
 .game{font-size:14px;color:var(--mute);margin:0 0 14px}
+.resp{margin:0 0 16px;padding:12px 16px;border-radius:10px;background:var(--soft);border-left:4px solid var(--band);font-size:15px}
+.resp b{font-weight:600}
 .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:18px;border-top:1px solid var(--rule)}
 .cols p,.cols ul{margin:0;font-size:15px}.cols ul{padding-left:18px}.cols li+li{margin-top:4px}
 .design{margin-top:22px;border:1px solid var(--rule);border-radius:14px;background:var(--soft);padding:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px}
@@ -266,12 +268,12 @@ function startSite(){
         ${(it.lineage||[]).length?`<div class="subh">Built on everything before it</div><table class="lin"><tbody>${it.lineage.map(l=>`<tr><td><a href="#${esc(l.link||'journey')}" data-open="${esc(l.link||'')}">From ${esc(l.from)}</a></td><td>${esc(l.what)}</td></tr>`).join('')}</tbody></table>`:''}
         ${pr?`<div class="subh">From project to product</div><div class="prod"><div><p class="vision">${esc(pr.vision)}</p><ul class="who">${(pr.who||[]).map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div><ol class="road">${(pr.roadmap||[]).map((r,i)=>`<li class="s-${esc(r.status)}"><i>${r.status==='done'?'✓':i+1}</i><span>${esc(r.step)}</span><small>${st[r.status]||''}</small></li>`).join('')}</ol></div>`:''}`;
     }
-    return `${it.game?`<p class="game">Season game: <b>${esc(it.game)}</b></p>`:''}
+    return `${it.game?`<p class="game">Season game: <b>${esc(it.game)}</b></p>`:''}${it.responsibility?`<p class="resp"><b>My role: ${esc((it.roles||[]).join(', '))}.</b> ${esc(it.responsibility)}</p>`:''}
       <div class="cols"><div><h4>What I built</h4><p>${esc(it.built)}</p></div><div><h4>What I enjoyed</h4><p>${esc(it.enjoyed)}</p></div><div><h4>What I learned</h4>${learnedList(it)}</div></div>
       ${design(it.design)}${pics(it)}${it.awards===false?'':`<div class="awards">${awards(it.awards)}</div>`}`;
   };
   const card=(it,band)=>`<details class="card${it.type==='capstone'?' capcard':''}" id="${esc(it.id)}" style="--band:${band}">
-    <summary><span class="bar"></span><div><div class="kick"><b>${esc(it.stage)}</b> · ${esc(it.era)}</div><h3>${esc(it.title)}</h3><p class="sum">${esc(it.type==='capstone'?(it.tagline||it.problem):it.built)}</p><div class="chips">${(it.roles||[]).map(r=>`<span>${esc(r)}</span>`).join('')}${it.design?(it.design.cad===false?'<span>Sketches</span>':'<span>CAD</span>'):''}</div></div><span class="more"><span class="o">Read more</span><span class="c">Close</span>${chev}</span></summary>
+    <summary><span class="bar"></span><div><div class="kick"><b>${esc(it.stage)}</b> · ${esc(it.era)}</div><h3>${esc(it.title)}</h3><p class="sum">${esc(it.type==='capstone'?(it.tagline||it.problem):(it.responsibility||it.built))}</p><div class="chips">${(it.roles||[]).map(r=>`<span>${esc(r)}</span>`).join('')}${it.design?(it.design.cad===false?'<span>Sketches</span>':'<span>CAD</span>'):''}</div></div><span class="more"><span class="o">Read more</span><span class="c">Close</span>${chev}</span></summary>
     <div class="inner">${body(it)}</div></details>`;
 
   $('brand').innerHTML=`${esc(S.name)} <span>· Robotics</span>`;
