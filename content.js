@@ -10,7 +10,8 @@
 
    EVERYDAY UPDATES
    • Change any text between the quotes "like this".
-   • result: how the season turned out (shown as "The result").
+   • nextStep: what you wanted to do next after that season
+     (shown as "What I want to do next", at the end of the card).
    • responsibility: one or two sentences on what you were responsible for
      that season. It shows under your role and on the closed card.
    • Photo: put the image in the "photos" folder, then add inside photos: [ ]
@@ -87,7 +88,7 @@ window.SITE = {
               responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
               built: "The drivetrain for our Tipping Point robot, rebuilt through several iterations as I learned the basic VEX mechanisms. Tipping Point was a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Rebuilding and learning how to build a drivetrain. I took the drivetrain apart and rebuilt it more than 10 times before it became a decent version.",
-              result: "At my first championship venue I was amazed by other students' designs, and the season set up my next step. The painful rebuilds showed me how much CAD could help, and I learned the basics of coding the robot to understand how it moves. Since the autonomous period gives teams an edge in tournaments, my interest grew toward the software side of robotics.",
+              nextStep: "Seeing other students' designs at the championship inspired me to aim higher. Next, I want to learn CAD so I can design the robot before building it and build exactly from the model, instead of rebuilding by trial and error. I also want to move to the software side of robotics, coding the robot's movement and autonomous routines, because a strong autonomous period gives teams an edge in tournaments.",
               learned: ["Through the painful process of rebuilding, I learned that I could save a lot of time by learning CAD and building exactly from the CAD model", "How the basic VEX mechanisms work", "The basics of coding the robot to understand how it moves", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
               design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot. Rebuilding the drivetrain more than 10 times is what convinced me to learn CAD.", images: [] },
               photos: [],
