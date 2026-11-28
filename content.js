@@ -102,7 +102,7 @@ window.SITE = {
               ]
             },
             {
-              id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023",
+              id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023", team: "95070G", club: "Redwood Robotics",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
               responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines.",
