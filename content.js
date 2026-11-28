@@ -92,7 +92,9 @@ window.SITE = {
               learned: ["Basic VEX mechanisms", "Drivetrain design and configurations", "Iterative design: build, test, rebuild", "Basics of coding robot movement", "CAD saves time over trial and error", "Learning from top teams' designs"],
               design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot. Rebuilding the drivetrain more than 10 times is what convinced me to learn CAD.", images: [] },
               photos: [
-                { src: "photos/tipping-point-robot.jpg", caption: "Our Tipping Point robot at the championship" }
+                { src: "photos/tipping-point-robot.jpg", caption: "Our Tipping Point robot at the championship" },
+                { src: "photos/tipping-point-clamp-front.jpg", caption: "Close-up of the goal clamp mechanism" },
+                { src: "photos/tipping-point-clamp-piston.jpg", caption: "The pneumatic piston that drives the clamp" }
               ],
               awards: [
                 { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021 - 2022" },
