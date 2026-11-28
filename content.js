@@ -16,6 +16,8 @@
      that season. It shows under your role and on the closed card.
    • Photo: put the image in the "photos" folder, then add inside photos: [ ]
        { src: "photos/my-robot.jpg", caption: "What this shows" },
+   • Video: same as a photo, with an .mp4 file, e.g.
+       { src: "photos/my-video.mp4", caption: "What it shows" },
    • Award: inside awards: [ ] add
        { name: "Award name", event: "Event name", year: "2026" },
      No awards for a step? Write  awards: false  to hide the awards line.
@@ -110,7 +112,9 @@ window.SITE = {
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Programming autonomous routines", "Using sensors to make the robot precise", "Testing and debugging under time pressure"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
-              photos: [], awards: []
+              photos: [
+                { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" }
+              ], awards: []
             },
             {
               id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "Season 3 · Add year",

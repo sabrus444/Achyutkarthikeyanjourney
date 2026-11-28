@@ -118,6 +118,7 @@ details[open] .more .o{display:none}details:not([open]) .more .c{display:none}
 .ph.cad{background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:14px 14px}
 .ph.real{border:1px solid var(--rule);overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:auto;display:flex;flex-direction:column;background:var(--soft);text-align:left}
 .gallery .ph.real:only-child{grid-column:span 2}
+.ph.vid{cursor:default}.ph video{width:100%;aspect-ratio:1/1;object-fit:contain;display:block;background:#111}
 .ph img{width:100%;aspect-ratio:1/1;object-fit:contain;display:block;background:#f6f7f9}
 .ph .figc{padding:8px 12px;font-size:13px;color:var(--mute);line-height:1.4}
 .awards{margin-top:16px;display:grid;gap:6px}
@@ -256,7 +257,7 @@ function startSite(){
 
   const gallery=(photos,labels)=>{
     const p=(photos||[]).filter(x=>x&&x.src);
-    if(p.length) return p.map(x=>`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</button>`).join('');
+    if(p.length) return p.map(x=>/\.(mp4|webm|mov)$/i.test(x.src)?`<div class="ph real vid"><video src="${esc(x.src)}" ${x.poster?`poster="${esc(x.poster)}"`:''} controls muted playsinline preload="metadata"></video>${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</div>`:`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</button>`).join('');
     return labels.map(l=>`<div class="ph${l.cad?' cad':''}">${l.t}</div>`).join('');
   };
   const awards=a=>{const r=(a||[]).filter(x=>x&&x.name);return r.length?r.map(x=>`<div class="aw"><span><b>${esc(x.name)}</b> · ${esc(x.event)}${x.year?', '+esc(x.year):''}</span></div>`).join(''):'<div class="aw none">Awards will be listed here</div>'};
