@@ -81,10 +81,14 @@ window.SITE = {
               title: "First year in VEX: learning the basics",
               roles: ["Hardware", "Drivetrain"], game: "Tipping Point (VEX V5 Robotics Competition)",
               built: "In my first VEX season I learned all the basic mechanisms and focused on the drivetrain, building several iterations in different configurations. The game was Tipping Point, where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
-              enjoyed: "Building a new drivetrain, testing it on the field, and making each version better than the last.",
-              learned: ["How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations"],
+              enjoyed: "Our team qualified for the National Championship and the VEX Worlds Championship. It was my first time at a VEX championship venue, and I was amazed by the designs other students had built. Seeing them showed me how far I could take my own robots.",
+              learned: ["How the basic VEX mechanisms work", "How different drivetrain configurations change speed, pushing power and turning", "Build, test, rebuild: improving a design through iterations", "Learning from the best teams by studying their robots at championships"],
               design: { tool: "CAD tool used (e.g. Onshape, Fusion 360)", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
-              photos: [], awards: []
+              photos: [],
+              awards: [
+                { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021–22" },
+                { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2021–22" }
+              ]
             },
             {
               id: "vex-ms-2", type: "vex", stage: "VEX", era: "Season 2 · Add year",
