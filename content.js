@@ -110,7 +110,9 @@ window.SITE = {
               built: "Wrote the driver controls and the autonomous routines for our Spin Up robot. Spin Up was a game where robots shoot discs into high goals and turn rollers to score points.",
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Setting up GitHub for our robot code", "VEX built-in functions", "Using sensors to run the autonomous routine", "Testing auton on a practice field"],
-              design: { placeholders: false, tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
+              design: { tool: "CAD", how: "I modeled the drivetrain in CAD before building it: six motors geared to omni wheels on each side. Putting my Tipping Point lesson into practice, we built straight from the model instead of rebuilding by trial and error.", images: [
+                { src: "photos/spin-up-cad-drivetrain.jpg", caption: "CAD model of our Spin Up drivetrain" }
+              ] },
               photos: [
                 { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" },
                 { src: "photos/spin-up-auton-field.mp4", poster: "photos/spin-up-auton-field-poster.jpg", caption: "Testing the autonomous routine on a competition field" },
