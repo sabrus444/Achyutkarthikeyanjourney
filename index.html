@@ -298,7 +298,7 @@ function startSite(){
   const programs=[...new Set(items.filter(i=>!/duplo|lego|capstone/.test(i.type)).map(i=>i.stage))];
   const roles=[...new Set(items.flatMap(i=>i.roles||[]).filter(r=>/lead|captain/i.test(r)))];
   const cap=items.find(i=>i.type==='capstone');
-  $('facts').innerHTML=[['Building since',items[0]?items[0].era:''],['Robotics programs',programs.join(', ')],['Leadership',roles.map(r=>r[0].toUpperCase()+r.slice(1)).join(', ')],['Capstone',cap?cap.stage:'']].map(f=>`<div><small>${f[0]}</small><b>${esc(f[1])}</b></div>`).join('');
+  $('facts').innerHTML=[['Building since',items[0]?items[0].era:''],['Robotics programs',programs.join(', ')],['Leadership',S.leadership||roles.map(r=>r[0].toUpperCase()+r.slice(1)).join(', ')],['Capstone',cap?cap.stage:'']].map(f=>`<div><small>${f[0]}</small><b>${esc(f[1])}</b></div>`).join('');
 
   $('sidenav').innerHTML=sections.map(s=>`<div class="sec"><div class="sectitle">${esc(s.title)}<small>${(s.phases||[]).reduce((n,p)=>n+(p.items||[]).length,0)} steps</small></div><ol class="phases">${(s.phases||[]).map((p,pi)=>`<li class="phase" style="--band:${bands[pi]}"><a href="#ph-${esc(p.id)}">${esc(p.title)}<small>${esc(p.years)}</small></a><ol class="items">${(p.items||[]).map(it=>`<li><a href="#${esc(it.id)}" data-open="${esc(it.id)}" class="${it.type==='capstone'?'cap':''}">${esc(gameOk(it)?it.game:it.stage)}<small>${esc((it.era||'').split('·')[0].trim())}</small></a></li>`).join('')}</ol></li>`).join('')}</ol></div>`).join('')+'<p class="legend">Click any step to open it.</p>';
 
