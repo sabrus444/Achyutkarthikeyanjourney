@@ -108,7 +108,7 @@ window.SITE = {
               id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023", team: "95070G", club: "Redwood Robotics",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
-              story: "Going into Spin Up, I didn't expect to qualify: 90% of our team had only one year of experience. With no field to practice on, my dad and I built half a field at home, and I tested, failed and fixed my autons until they were reliable. Following a checklist and cutting mistakes paid off. My skills runs earned us the Excellence Award at Florin High School, a spot at States, and finally Worlds. That season taught me the word that defines robotics for me: perseverance.",
+              story: "Going into Spin Up, I didn't expect to qualify: 90% of our team had only one year of experience. With no field to practice on, my dad and I built half a field at home, and I tested, failed and fixed my autons until they were reliable. Following a checklist and cutting mistakes paid off. My skills runs earned us the Excellence Award at the VRC Wolfpack Robotics Tournament, a spot at States, and finally Worlds. That season taught me the word that defines robotics for me: perseverance.",
               responsibility: "I programmed the robot: the driver controls and the autonomous routines. At Worlds, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
               built: "The driver and autonomous code for our Spin Up robot. When the standard VEX movement functions weren't precise enough, I learned PID control, how it shapes motor power and performance, and why motors must stay cool for the code to perform.",
               enjoyed: "Testing, failing and improving my autons on our home-built field until I trusted them in competition.",
@@ -121,7 +121,7 @@ window.SITE = {
                 { src: "photos/spin-up-auton-field.mp4", poster: "photos/spin-up-auton-field-poster.jpg", caption: "Testing the autonomous routine on a competition field" },
                 { src: "photos/spin-up-worlds-skills.jpg", caption: "Worlds Skills rankings: 95070G at #73 with 188 points" }
               ], awards: [
-                { name: "Excellence Award", event: "Florin High School tournament", year: "2022 - 2023" },
+                { name: "Excellence Award", event: "VRC Wolfpack Robotics Tournament, Florin High School", year: "2022 - 2023" },
                 { name: "Qualified for the State Championship", event: "VEX V5 Robotics Competition", year: "2022 - 2023" },
                 { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2022 - 2023" },
                 { name: "Ranked #21 in the Science Division", event: "VEX Worlds Championship", year: "2022 - 2023" },
