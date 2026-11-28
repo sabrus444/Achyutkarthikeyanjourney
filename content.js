@@ -12,6 +12,7 @@
    • Change any text between the quotes "like this".
    • nextStep: what you wanted to do next after that season
      (shown as "What I want to do next", at the end of the card).
+   • story: a short "story of the season" shown in a box at the top of the card.
    • responsibility: one or two sentences on what you were responsible for
      that season. It shows under your role and on the closed card.
    • Photo: put the image in the "photos" folder, then add inside photos: [ ]
@@ -107,9 +108,10 @@ window.SITE = {
               id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023", team: "95070G", club: "Redwood Robotics",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
+              story: "Going into Spin Up, I had little hope of qualifying: 90% of our team had only one year of experience. By following a checklist and minimizing mistakes, we made it. Mid-season, my skills runs at the Florin High School tournament helped us win the Excellence Award and a spot at States, and the same auton and skills strategy qualified us for Worlds.",
               responsibility: "I programmed the robot: the driver controls and the autonomous routines. At Worlds, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
               built: "The driver and autonomous code for our Spin Up robot, in a game about shooting discs into high goals and turning rollers. The standard VEX movement functions weren't precise enough, so I learned PID control, how it shapes motor power and performance, and why the motors must stay cool for the code to perform.",
-              enjoyed: "Building my own practice field. With no field to test on, my dad and I built half a field from wood and mounted real VEX game elements. Having time to test, fail and learn made my understanding solid and gave me confidence in my autons. Mid-season, my skills runs at the Florin High School tournament helped us win the Excellence Award and a spot at States, and the same auton strategy in Skills qualified us for Worlds.",
+              enjoyed: "Building my own practice field. With no field to test on, my dad and I built half a field from wood and mounted real VEX game elements. Having time to test, fail and learn made my understanding solid and gave me confidence in my autons.",
               learned: ["Perseverance: the word robotics taught me", "PID control for precise movement", "How motor power and heat affect performance", "The limits of VEX built-in functions", "Using sensors in autonomous routines", "Setting up GitHub for our code"],
               design: { tool: "CAD", how: "I modeled the drivetrain in CAD before building it: six motors geared to omni wheels on each side. Putting my Tipping Point lesson into practice, we built straight from the model instead of rebuilding by trial and error.", images: [
                 { src: "photos/spin-up-cad-drivetrain.jpg", caption: "CAD model of our Spin Up drivetrain" }

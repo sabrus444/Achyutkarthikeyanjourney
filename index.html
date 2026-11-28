@@ -103,6 +103,7 @@ details[open] .more .o{display:none}details:not([open]) .more .c{display:none}
 .resp{margin:0 0 16px;padding:12px 16px;border-radius:10px;background:var(--soft);border-left:4px solid var(--band);font-size:15px}
 .resp b{font-weight:600}
 .result{margin-top:20px;padding:16px 18px;border-radius:12px;border:1px solid color-mix(in srgb,var(--band) 55%,var(--rule));background:color-mix(in srgb,var(--band) 10%,var(--bg))}
+.result.story{margin:0 0 16px}
 .result h4{color:var(--acc);font-weight:600}
 .result p{margin:0;font-size:16px}
 .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:18px;border-top:1px solid var(--rule)}
@@ -282,7 +283,7 @@ function startSite(){
         ${(it.lineage||[]).length?`<div class="subh">Built on everything before it</div><table class="lin"><tbody>${it.lineage.map(l=>`<tr><td><a href="#${esc(l.link||'journey')}" data-open="${esc(l.link||'')}">From ${esc(l.from)}</a></td><td>${esc(l.what)}</td></tr>`).join('')}</tbody></table>`:''}
         ${pr?`<div class="subh">From project to product</div><div class="prod"><div><p class="vision">${esc(pr.vision)}</p><ul class="who">${(pr.who||[]).map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div><ol class="road">${(pr.roadmap||[]).map((r,i)=>`<li class="s-${esc(r.status)}"><i>${r.status==='done'?'✓':i+1}</i><span>${esc(r.step)}</span><small>${st[r.status]||''}</small></li>`).join('')}</ol></div>`:''}`;
     }
-    return `${it.game&&!gameOk(it)?`<p class="game">Season game: <b>${esc(it.game)}</b></p>`:''}${it.responsibility?`<p class="resp"><b>My role: ${esc((it.roles||[]).join(', '))}.</b> ${esc(it.responsibility)}</p>`:''}
+    return `${it.game&&!gameOk(it)?`<p class="game">Season game: <b>${esc(it.game)}</b></p>`:''}${it.story?`<div class="result story"><h4>The story of the season</h4><p>${esc(it.story)}</p></div>`:''}${it.responsibility?`<p class="resp"><b>My role: ${esc((it.roles||[]).join(', '))}.</b> ${esc(it.responsibility)}</p>`:''}
       <div class="cols"><div><h4>What I built</h4><p>${esc(it.built)}</p></div><div><h4>What I enjoyed</h4><p>${esc(it.enjoyed)}</p></div><div><h4>What I learned</h4>${learnedList(it)}</div></div>
       ${design(it.design)}${pics(it)}${it.awards===false?'':`<div class="awards">${awards(it.awards)}</div>`}${it.nextStep?`<div class="result"><h4>What I want to do next</h4><p>${esc(it.nextStep)}</p></div>`:''}`;
   };
