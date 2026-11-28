@@ -102,10 +102,10 @@ window.SITE = {
               ]
             },
             {
-              id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "Season 2 · Add year",
+              id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023",
               title: "Taking over the code",
-              roles: ["Lead programmer"], game: "Add this season's VEX game",
-              built: "Wrote the driver controls and the autonomous routines for our robot.",
+              roles: ["Lead programmer"], game: "Spin Up",
+              built: "Wrote the driver controls and the autonomous routines for our Spin Up robot. Spin Up was a game where robots shoot discs into high goals and turn rollers to score points.",
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Programming autonomous routines", "Using sensors to make the robot precise", "Testing and debugging under time pressure"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
