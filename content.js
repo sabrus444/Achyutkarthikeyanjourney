@@ -74,13 +74,13 @@ window.SITE = {
         /* ---------------- MIDDLE ---------------- */
         {
           id: "middle", title: "Middle school", years: "Grades 6 – 8",
-          intro: "Three VEX seasons: from building the hardware to leading the team.",
+          intro: "Three VEX V5 Robotics Competition seasons: from building the hardware to leading the team.",
           items: [
             {
-              id: "vex-ms-1", type: "vex", stage: "VEX", era: "Season 1 · Add year",
+              id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "Season 1 · 2021–22",
               title: "Joining VEX: the hardware year",
-              roles: ["Hardware"], game: "Add this season's VEX game",
-              built: "Built and rebuilt the robot's mechanisms for that season's game.",
+              roles: ["Hardware"], game: "Tipping Point (VEX V5 Robotics Competition)",
+              built: "Built and rebuilt the robot's mechanisms for Tipping Point, a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Testing a mechanism, watching it fail, and finding a design that worked.",
               learned: ["Design, test, improve, again and again", "Building things solid enough to survive a match", "Reading the game to decide what to build"],
               design: { tool: "CAD tool used (e.g. Onshape, Fusion 360)", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
