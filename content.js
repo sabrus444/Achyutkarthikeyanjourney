@@ -117,7 +117,7 @@ window.SITE = {
                 { src: "photos/spin-up-worlds-skills.jpg", caption: "Worlds Skills rankings: 95070G at #73 with 188 points" }
               ], awards: [
                 { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2022 - 2023" },
-                { name: "Ranked #21 in our division", event: "VEX Worlds Championship", year: "2022 - 2023" },
+                { name: "Ranked #21 in the Science Division", event: "VEX Worlds Championship", year: "2022 - 2023" },
                 { name: "World #73 in Skills (188 points: Programming 62, Driver 126)", event: "VEX Worlds Championship", year: "2022 - 2023" }
               ]
             },
