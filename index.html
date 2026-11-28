@@ -235,9 +235,8 @@ dialog button{position:fixed;top:14px;right:14px;width:46px;height:46px;border-r
 
 <dialog id="lb"><button type="button" id="lbX" aria-label="Close photo">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
 
-<script src="content.js"></script>
 <script>
-{
+function startSite(){
   const S=window.SITE||{sections:[]};
   const $=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -317,6 +316,7 @@ dialog button{position:fixed;top:14px;right:14px;width:46px;height:46px;border-r
   $('lbX').addEventListener('click',()=>lb.close());
   lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
 }
+(function(){var t=document.createElement('script');t.src='content.js?v='+Date.now();t.onload=startSite;t.onerror=startSite;document.body.appendChild(t);})();
 </script>
 </body>
 </html>
