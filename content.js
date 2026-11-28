@@ -24,7 +24,7 @@
 window.SITE = {
   name: "Achyut Karthikeyan",
   headline: "From Duplo blocks to robots that solve real problems.",
-  intro: "I started stacking Duplo at age 3. Every year since, the builds got smaller in parts and bigger in ideas: LEGO, FTC, VEX, FRC, and finally Ball Boy, a robot I designed for my own tennis practice.",
+  intro: "I started stacking Duplo at age 3. Every year since, the builds got smaller in parts and bigger in ideas: LEGO, FLL, VEX, FRC, and finally Ball Boy, a robot I designed for my own tennis practice.",
   heroPhoto: "",
   contactEmail: "",
   next: "Add what's next: the next season, a new build, or what you want to study.",
@@ -59,12 +59,12 @@ window.SITE = {
               photos: [], awards: []
             },
             {
-              id: "ftc", type: "ftc", stage: "FTC", era: "Add grade",
-              title: "My first robotics team",
-              roles: ["Team member"], game: "Add season / game name",
-              built: "My first competition robot, built with a team.",
-              enjoyed: "The moment something I helped build drove onto the field and competed.",
-              learned: ["Motors, sensors and how robots are wired", "My first lines of robot code", "Working as part of a team"],
+              id: "fll", type: "fll", stage: "FLL", era: "Add grade",
+              title: "My first robotics team: FIRST LEGO League",
+              roles: ["Team member"], game: "Add season / challenge name",
+              built: "My first competition robot, built from LEGO with a team, to complete missions on the challenge table.",
+              enjoyed: "The moment something I helped build ran its missions on the table at competition.",
+              learned: ["Motors, sensors and how robots are programmed", "My first lines of robot code", "Working as part of a team"],
               photos: [], awards: []
             }
           ]
