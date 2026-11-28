@@ -134,7 +134,7 @@ window.SITE = {
               title: "Leading the team",
               roles: ["Team captain", "Coach", "Lead programmer"], game: "Over Under",
               story: "I thought being captain would be fun, but it taught me much more: how to form a team, communicate with every member, and patiently teach our rookies so they stayed engaged. It was my last year of middle school VEX, so I set our biggest goal yet: the Excellence Award at the World Championship. It goes to one team that excels in matches and skills, keeps an outstanding engineering notebook, and works as one united team in the judges' interview.",
-              responsibility: "As team captain and coach, I made sure everything was documented meticulously and that everyone on the team followed the engineering process. I also coached our drive team in matches and led the programming.",
+              responsibility: "As team captain and coach, I made sure everything was documented meticulously and that everyone on the team followed the engineering design process. I also coached our drive team in matches and led the programming.",
               built: "Our robot for Over Under, a game where robots score triballs into goals and elevate on a bar at the end of the match. I led the team through the season while still writing the robot's code.",
               enjoyed: "Helping teammates find their strengths and seeing the whole team improve.",
               learned: ["How to form a team", "Communicating with every team member", "Patiently teaching rookies so they stay engaged", "Picking alliance partners by studying their game style and strategy", "Setting a big goal and working toward it as a team"],
