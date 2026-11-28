@@ -115,9 +115,10 @@ details[open] .more .o{display:none}details:not([open]) .more .c{display:none}
 .design .gallery{margin:0;grid-template-columns:repeat(2,minmax(0,1fr))}
 .ph{aspect-ratio:3/2;border-radius:10px;border:1px dashed var(--rule);background:var(--bg);display:grid;place-items:center;color:var(--mute);font:13px Inter,sans-serif;padding:0}
 .ph.cad{background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:14px 14px}
-.ph.real{border:0;overflow:hidden;cursor:zoom-in;position:relative}
-.ph img{width:100%;height:100%;object-fit:cover;display:block}
-.ph figcaption{position:absolute;inset:auto 0 0 0;padding:8px 10px;font-size:12px;color:#fff;text-align:left;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.ph.real{border:1px solid var(--rule);overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:auto;display:flex;flex-direction:column;background:var(--soft);text-align:left}
+.gallery .ph.real:only-child{grid-column:span 2}
+.ph img{width:100%;aspect-ratio:1/1;object-fit:contain;display:block;background:#f6f7f9}
+.ph .figc{padding:8px 12px;font-size:13px;color:var(--mute);line-height:1.4}
 .awards{margin-top:16px;display:grid;gap:6px}
 .aw{display:flex;align-items:center;gap:10px;font-size:14px}
 .aw::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--acc);flex:none}
@@ -254,7 +255,7 @@ function startSite(){
 
   const gallery=(photos,labels)=>{
     const p=(photos||[]).filter(x=>x&&x.src);
-    if(p.length) return p.map(x=>`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<figcaption>${esc(x.caption)}</figcaption>`:''}</button>`).join('');
+    if(p.length) return p.map(x=>`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</button>`).join('');
     return labels.map(l=>`<div class="ph${l.cad?' cad':''}">${l.t}</div>`).join('');
   };
   const awards=a=>{const r=(a||[]).filter(x=>x&&x.name);return r.length?r.map(x=>`<div class="aw"><span><b>${esc(x.name)}</b> · ${esc(x.event)}${x.year?', '+esc(x.year):''}</span></div>`).join(''):'<div class="aw none">Awards will be listed here</div>'};
