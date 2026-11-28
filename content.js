@@ -133,10 +133,11 @@ window.SITE = {
               id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "2023 - 2024", team: "95070C", club: "Redwood Robotics",
               title: "Leading the team",
               roles: ["Team captain", "Coach", "Lead programmer"], game: "Over Under",
+              story: "I thought being captain would be fun, but it taught me much more: how to form a team, communicate with every member, and patiently teach our rookies so they stayed engaged. It was my last year of middle school VEX, so I set our biggest goal yet: the Excellence Award at the World Championship. It goes to one team that excels in matches and skills, keeps an outstanding engineering notebook, and works as one united team in the judges' interview.",
               responsibility: "As team captain and coach, I led the team and coached our drive team in matches, while still leading the programming.",
               built: "Our robot for Over Under, a game where robots score triballs into goals and elevate on a bar at the end of the match. I led the team through the season while still writing the robot's code.",
               enjoyed: "Helping teammates find their strengths and seeing the whole team improve.",
-              learned: ["Leading and planning a season", "Communicating clearly with teammates", "Making decisions when the clock is ticking"],
+              learned: ["How to form a team", "Communicating with every team member", "Patiently teaching rookies so they stay engaged", "Setting a big goal and working toward it as a team"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
               photos: [], awards: []
             }
