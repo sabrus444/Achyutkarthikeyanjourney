@@ -108,7 +108,7 @@ window.SITE = {
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
               responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines. At the VEX Worlds Championship, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
-              built: "Wrote the driver controls and the autonomous routines for our Spin Up robot. Spin Up was a game where robots shoot discs into high goals and turn rollers to score points.",
+              built: "The driver controls and autonomous routines for our Spin Up robot, a game where robots shoot discs into high goals and turn rollers to score points. At the start of the season I used the standard VEX movement functions, but they weren't precise and limited what the robot could do.",
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Setting up GitHub for our robot code", "VEX built-in functions", "Using sensors to run the autonomous routine", "Testing auton on a practice field"],
               design: { tool: "CAD", how: "I modeled the drivetrain in CAD before building it: six motors geared to omni wheels on each side. Putting my Tipping Point lesson into practice, we built straight from the model instead of rebuilding by trial and error.", images: [
