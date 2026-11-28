@@ -80,7 +80,7 @@ window.SITE = {
           intro: "Three VEX V5 Robotics Competition seasons: from building the hardware to leading the team.",
           items: [
             {
-              id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "Season 1 · 2021–22",
+              id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "2021 - 2022",
               title: "First year in VEX: learning the basics",
               roles: ["Builder"], game: "Tipping Point (VEX V5 Robotics Competition)",
               responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
@@ -90,8 +90,8 @@ window.SITE = {
               design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot.", images: [] },
               photos: [],
               awards: [
-                { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021–22" },
-                { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2021–22" }
+                { name: "Qualified for the National Championship", event: "VEX V5 Robotics Competition", year: "2021 - 2022" },
+                { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2021 - 2022" }
               ]
             },
             {
