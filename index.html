@@ -286,7 +286,7 @@ function startSite(){
       ${design(it.design)}${pics(it)}${it.awards===false?'':`<div class="awards">${awards(it.awards)}</div>`}${it.nextStep?`<div class="result"><h4>What I want to do next</h4><p>${esc(it.nextStep)}</p></div>`:''}`;
   };
   const card=(it,band)=>`<details class="card${it.type==='capstone'?' capcard':''}" id="${esc(it.id)}" style="--band:${band}">
-    <summary><span class="bar"></span><div><div class="kick"><b>${esc(it.stage)}</b> · ${esc(it.era)}</div>${gameOk(it)?`<div class="gtitle">${esc(it.game)}</div>`:''}<h3>${esc(it.title)}</h3><p class="sum">${esc(it.type==='capstone'?(it.tagline||it.problem):(it.responsibility||it.built))}</p><div class="chips">${(it.roles||[]).map(r=>`<span>${esc(r)}</span>`).join('')}${it.design?(it.design.cad===false?'<span>Sketches</span>':'<span>CAD</span>'):''}</div></div><span class="more"><span class="o">Read more</span><span class="c">Close</span>${chev}</span></summary>
+    <summary><span class="bar"></span><div><div class="kick"><b>${esc(it.stage)}</b> · ${esc(it.era)}${it.team?` · Team <b>${esc(it.team)}</b>`:''}</div>${gameOk(it)?`<div class="gtitle">${esc(it.game)}</div>`:''}<h3>${esc(it.title)}</h3><p class="sum">${esc(it.type==='capstone'?(it.tagline||it.problem):(it.responsibility||it.built))}</p><div class="chips">${(it.roles||[]).map(r=>`<span>${esc(r)}</span>`).join('')}${it.design?(it.design.cad===false?'<span>Sketches</span>':'<span>CAD</span>'):''}</div></div><span class="more"><span class="o">Read more</span><span class="c">Close</span>${chev}</span></summary>
     <div class="inner">${body(it)}</div></details>`;
 
   $('brand').innerHTML=`${esc(S.name)} <span>· Robotics</span>`;
