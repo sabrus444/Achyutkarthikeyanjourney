@@ -92,8 +92,7 @@ window.SITE = {
               enjoyed: "Rebuilding and learning how to build a drivetrain. I took the drivetrain apart and rebuilt it more than 10 times before it became a decent version.",
               nextStep: "Learn CAD and build straight from the model, not by trial and error. Move into programming, because a strong autonomous routine gives an edge in tournaments.",
               learned: ["Basic VEX mechanisms", "Drivetrain design and configurations", "Iterative design: build, test, rebuild", "Basics of coding robot movement", "CAD saves time over trial and error", "Learning from top teams' designs"],
-              design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot. Rebuilding the drivetrain more than 10 times is what convinced me to learn CAD.", images: [] },
-              photos: [
+                            photos: [
                 { src: "photos/tipping-point-robot.jpg", caption: "Our Tipping Point robot at the championship" },
                 { src: "photos/tipping-point-clamp-front.jpg", caption: "Close-up of the goal clamp mechanism" },
                 { src: "photos/tipping-point-clamp-piston.jpg", caption: "The pneumatic piston that drives the clamp" }
