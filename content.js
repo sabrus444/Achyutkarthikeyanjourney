@@ -105,6 +105,7 @@ window.SITE = {
               id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
+              responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines.",
               built: "Wrote the driver controls and the autonomous routines for our Spin Up robot. Spin Up was a game where robots shoot discs into high goals and turn rollers to score points.",
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Programming autonomous routines", "Using sensors to make the robot precise", "Testing and debugging under time pressure"],
