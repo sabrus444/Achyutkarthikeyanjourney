@@ -137,7 +137,7 @@ window.SITE = {
               responsibility: "As team captain and coach, I led the team and coached our drive team in matches, while still leading the programming.",
               built: "Our robot for Over Under, a game where robots score triballs into goals and elevate on a bar at the end of the match. I led the team through the season while still writing the robot's code.",
               enjoyed: "Helping teammates find their strengths and seeing the whole team improve.",
-              learned: ["How to form a team", "Communicating with every team member", "Patiently teaching rookies so they stay engaged", "Setting a big goal and working toward it as a team"],
+              learned: ["How to form a team", "Communicating with every team member", "Patiently teaching rookies so they stay engaged", "Picking alliance partners by studying their game style and strategy", "Setting a big goal and working toward it as a team"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
               photos: [], awards: []
             }
