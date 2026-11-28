@@ -26,7 +26,7 @@ window.SITE = {
   headline: "From Duplo blocks to robots that solve real problems.",
   intro: "I started stacking Duplo at age 3. Every year since, the builds got smaller in parts and bigger in ideas: LEGO, FTC, VEX, FRC, and finally Ball Boy, a robot I designed for my own tennis practice.",
   heroPhoto: "",
-  contactEmail: "sabrus444@gmail.com",
+  contactEmail: "",
   next: "Add what's next: the next season, a new build, or what you want to study.",
 
   sections: [
