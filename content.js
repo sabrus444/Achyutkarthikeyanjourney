@@ -113,7 +113,8 @@ window.SITE = {
               learned: ["Setting up GitHub for our robot code", "VEX built-in functions", "Using sensors to run the autonomous routine", "Testing auton on a practice field"],
               design: { tool: "CAD tool used", how: "Describe how you designed this robot: first sketches, the CAD model, what you changed after testing, and why.", images: [] },
               photos: [
-                { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" }
+                { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" },
+                { src: "photos/spin-up-auton-field.mp4", poster: "photos/spin-up-auton-field-poster.jpg", caption: "Testing the autonomous routine on a competition field" }
               ], awards: []
             },
             {

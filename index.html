@@ -257,7 +257,7 @@ function startSite(){
 
   const gallery=(photos,labels)=>{
     const p=(photos||[]).filter(x=>x&&x.src);
-    if(p.length) return p.map(x=>/\.(mp4|webm|mov)$/i.test(x.src)?`<div class="ph real vid"><video src="${esc(x.src)}" ${x.poster?`poster="${esc(x.poster)}"`:''} controls muted playsinline preload="metadata"></video>${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</div>`:`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</button>`).join('');
+    if(p.length) return p.map(x=>/\.(mp4|webm|mov)$/i.test(x.src)?`<div class="ph real vid"><video src="${esc(x.src)}" ${x.poster?`poster="${esc(x.poster)}"`:''} controls playsinline preload="metadata"></video>${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</div>`:`<button type="button" class="ph real" data-src="${esc(x.src)}" data-cap="${esc(x.caption)}"><img src="${esc(x.src)}" alt="${esc(x.caption||'Photo')}" loading="lazy">${x.caption?`<span class="figc">${esc(x.caption)}</span>`:''}</button>`).join('');
     return labels.map(l=>`<div class="ph${l.cad?' cad':''}">${l.t}</div>`).join('');
   };
   const awards=a=>{const r=(a||[]).filter(x=>x&&x.name);return r.length?r.map(x=>`<div class="aw"><span><b>${esc(x.name)}</b> · ${esc(x.event)}${x.year?', '+esc(x.year):''}</span></div>`).join(''):'<div class="aw none">Awards will be listed here</div>'};
