@@ -108,6 +108,7 @@ details[open] .more .o{display:none}details:not([open]) .more .c{display:none}
 .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:18px;border-top:1px solid var(--rule)}
 .cols p,.cols ul{margin:0;font-size:15px}.cols ul{padding-left:18px}.cols li+li{margin-top:4px}
 .design{margin-top:22px;border:1px solid var(--rule);border-radius:14px;background:var(--soft);padding:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px}
+.design.solo{grid-template-columns:minmax(0,1fr)}
 .design h5{margin:0;font:600 16px "Inter Tight",Inter,sans-serif}
 .tool{display:inline-block;margin-top:8px;font-size:13px;color:var(--mute);border:1px solid var(--rule);border-radius:6px;padding:2px 8px;background:var(--bg)}
 .design p{margin:10px 0 0;font-size:15px;color:var(--mute)}
@@ -259,7 +260,12 @@ function startSite(){
     return labels.map(l=>`<div class="ph${l.cad?' cad':''}">${l.t}</div>`).join('');
   };
   const awards=a=>{const r=(a||[]).filter(x=>x&&x.name);return r.length?r.map(x=>`<div class="aw"><span><b>${esc(x.name)}</b> · ${esc(x.event)}${x.year?', '+esc(x.year):''}</span></div>`).join(''):'<div class="aw none">Awards will be listed here</div>'};
-  const design=d=>d?`<div class="design"><div><h5>How I designed it</h5>${d.tool?`<span class="tool">${esc(d.tool)}</span>`:''}<p>${esc(d.how)}</p></div><div class="gallery">${gallery(d.images,d.cad===false?[{t:'Sketch'},{t:'Build photo'}]:[{t:'CAD screenshot',cad:1},{t:'Sketch or render',cad:1}])}</div></div>`:'';
+  const design=d=>{
+    if(!d) return '';
+    const has=(d.images||[]).some(x=>x&&x.src);
+    const g=has||d.cad!==false?`<div class="gallery">${gallery(d.images,[{t:'CAD screenshot',cad:1},{t:'Sketch or render',cad:1}])}</div>`:'';
+    return `<div class="design${g?'':' solo'}"><div><h5>How I designed it</h5>${d.tool?`<span class="tool">${esc(d.tool)}</span>`:''}<p>${esc(d.how)}</p></div>${g}</div>`;
+  };
   const pics=it=>`<div class="gallery">${gallery(it.photos,[{t:'Photo'},{t:'Photo'},{t:'Photo or video'}])}</div>`;
   const gameOk=it=>it.game&&!/^add /i.test(it.game);
   const learnedList=it=>`<ul>${(it.learned||[]).map(l=>`<li>${esc(l)}</li>`).join('')}</ul>`;
