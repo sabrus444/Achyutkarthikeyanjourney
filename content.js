@@ -106,7 +106,7 @@ window.SITE = {
               id: "vex-ms-2", type: "vex", stage: "VEX V5", era: "2022 - 2023", team: "95070G", club: "Redwood Robotics",
               title: "Taking over the code",
               roles: ["Lead programmer"], game: "Spin Up",
-              responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines.",
+              responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines. At the VEX Worlds Championship, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
               built: "Wrote the driver controls and the autonomous routines for our Spin Up robot. Spin Up was a game where robots shoot discs into high goals and turn rollers to score points.",
               enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
               learned: ["Setting up GitHub for our robot code", "VEX built-in functions", "Using sensors to run the autonomous routine", "Testing auton on a practice field"],
@@ -114,7 +114,9 @@ window.SITE = {
               photos: [
                 { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" },
                 { src: "photos/spin-up-auton-field.mp4", poster: "photos/spin-up-auton-field-poster.jpg", caption: "Testing the autonomous routine on a competition field" }
-              ], awards: []
+              ], awards: [
+                { name: "World #73 in Skills (188 points: Programming 62, Driver 126)", event: "VEX Worlds Championship", year: "2022 - 2023" }
+              ]
             },
             {
               id: "vex-ms-3", type: "vex", stage: "VEX V5", era: "Season 3 · Add year",
