@@ -112,6 +112,7 @@ window.SITE = {
               responsibility: "I programmed the robot: the driver controls and the autonomous routines. At Worlds, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
               built: "The driver and autonomous code for our Spin Up robot. When the standard VEX movement functions weren't precise enough, I learned PID control, how it shapes motor power and performance, and why motors must stay cool for the code to perform.",
               enjoyed: "Testing, failing and improving my autons on our home-built field until I trusted them in competition.",
+              nextStep: "Become team captain. As a spotter at Worlds, I saw how the best teams win through coaching, game strategy and alliance selection, and I wanted to bring that to our team.",
               learned: ["Perseverance", "PID control for precise movement", "Managing motor power and heat", "Using sensors in autonomous routines", "GitHub for our team's code", "Helping teammates test the robot with my code"],
               design: { tool: "CAD", how: "I modeled the drivetrain in CAD before building it: six motors geared to omni wheels on each side. Putting my Tipping Point lesson into practice, we built straight from the model instead of rebuilding by trial and error.", images: [
                 { src: "photos/spin-up-cad-drivetrain.jpg", caption: "CAD model of our Spin Up drivetrain" }
