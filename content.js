@@ -82,7 +82,7 @@ window.SITE = {
             {
               id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "2021 - 2022",
               title: "First year in VEX: learning the basics",
-              roles: ["Builder"], game: "Tipping Point (VEX V5 Robotics Competition)",
+              roles: ["Builder"], game: "Tipping Point",
               responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
               built: "The drivetrain for our Tipping Point robot, rebuilt through several iterations as I learned the basic VEX mechanisms. Tipping Point was a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Our team qualified for the National Championship and the VEX Worlds Championship. It was my first time at a VEX championship venue, and I was amazed by the designs other students had built. Seeing them showed me how far I could take my own robots.",
