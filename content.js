@@ -88,7 +88,7 @@ window.SITE = {
               responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
               built: "The drivetrain for our Tipping Point robot, rebuilt through several iterations as I learned the basic VEX mechanisms. Tipping Point was a game where robots score rings, move mobile goals into their zone and balance on a platform at the end of the match.",
               enjoyed: "Rebuilding and learning how to build a drivetrain. I took the drivetrain apart and rebuilt it more than 10 times before it became a decent version.",
-              nextStep: "Learn CAD and build straight from the model, not by trial and error. Move into programming, because a strong autonomous routine wins tournaments.",
+              nextStep: "Learn CAD and build straight from the model, not by trial and error. Move into programming, because a strong autonomous routine gives an edge in tournaments.",
               learned: ["Basic VEX mechanisms", "Drivetrain design and configurations", "Iterative design: build, test, rebuild", "Basics of coding robot movement", "CAD saves time over trial and error", "Learning from top teams' designs"],
               design: { cad: false, tool: "Hand sketches", how: "No CAD this year. I designed with sketches and hands-on building, learning from my teammates as we built and rebuilt the robot. Rebuilding the drivetrain more than 10 times is what convinced me to learn CAD.", images: [] },
               photos: [],
