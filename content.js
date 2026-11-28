@@ -109,16 +109,18 @@ window.SITE = {
               roles: ["Lead programmer"], game: "Spin Up",
               responsibility: "I was responsible for programming the robot: the driver controls and the autonomous routines. At the VEX Worlds Championship, my programming skills run scored 62 points, helping our team rank #73 in the world in Skills.",
               built: "The driver controls and autonomous routines for our Spin Up robot, a game where robots shoot discs into high goals and turn rollers to score points. At the start of the season I used the standard VEX movement functions, but they weren't precise and limited what the robot could do. So I learned PID control and how it affects motor power and performance, and found out how important it is to keep the motors cool so the software can do its job.",
-              enjoyed: "Writing an autonomous run and seeing the robot score on its own.",
+              enjoyed: "Building my own practice field. We didn't have a field to test on, so with my dad's help I got wood, built half a field and mounted real VEX game elements to test my auton. Having time to test, fail and learn made my understanding solid and gave me the confidence to run my autons. Midway through the season, my skills runs at the Florin High School tournament helped us win the Excellence Award and a place at States, and running the same auton strategy in Skills qualified us for Worlds.",
               learned: ["Setting up GitHub for our robot code", "VEX built-in functions and their limits", "PID control for precise movement", "How motor power and heat affect performance", "Using sensors to run the autonomous routine", "Testing auton on a practice field"],
               design: { tool: "CAD", how: "I modeled the drivetrain in CAD before building it: six motors geared to omni wheels on each side. Putting my Tipping Point lesson into practice, we built straight from the model instead of rebuilding by trial and error.", images: [
                 { src: "photos/spin-up-cad-drivetrain.jpg", caption: "CAD model of our Spin Up drivetrain" }
               ] },
               photos: [
-                { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the drivetrain autonomous routine at home" },
+                { src: "photos/spin-up-auton.mp4", poster: "photos/spin-up-auton-poster.jpg", caption: "Testing the autonomous routine on the half field I built at home" },
                 { src: "photos/spin-up-auton-field.mp4", poster: "photos/spin-up-auton-field-poster.jpg", caption: "Testing the autonomous routine on a competition field" },
                 { src: "photos/spin-up-worlds-skills.jpg", caption: "Worlds Skills rankings: 95070G at #73 with 188 points" }
               ], awards: [
+                { name: "Excellence Award", event: "Florin High School tournament", year: "2022 - 2023" },
+                { name: "Qualified for the State Championship", event: "VEX V5 Robotics Competition", year: "2022 - 2023" },
                 { name: "Qualified for the VEX Worlds Championship", event: "VEX V5 Robotics Competition", year: "2022 - 2023" },
                 { name: "Ranked #21 in the Science Division", event: "VEX Worlds Championship", year: "2022 - 2023" },
                 { name: "World #73 in Skills (188 points: Programming 62, Driver 126)", event: "VEX Worlds Championship", year: "2022 - 2023" }
