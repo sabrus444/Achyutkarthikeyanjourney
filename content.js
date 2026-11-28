@@ -82,7 +82,7 @@ window.SITE = {
           intro: "Three VEX V5 Robotics Competition seasons: from building the hardware to leading the team.",
           items: [
             {
-              id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "2021 - 2022", team: "95070H",
+              id: "vex-ms-1", type: "vex", stage: "VEX V5", era: "2021 - 2022", team: "95070H", club: "Redwood Robotics",
               title: "First year in VEX: learning the basics",
               roles: ["Builder"], game: "Tipping Point",
               responsibility: "I was responsible for building the robot's drivetrain, designing and building several iterations in different configurations.",
